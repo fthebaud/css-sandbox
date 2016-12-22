@@ -1,5 +1,18 @@
-.test {
+.stepA {
   background-color: red;
   width: 200px;
   height: 100px;
+  transition: all 2s;
+}
+
+.stepA:hover {
+  background-color: red;
+  width: 500px;
+  height: 100px;
+}
+
+.stepB {
+  background-color: blue;
+  width: 200px;
+  height: 300px;
 }

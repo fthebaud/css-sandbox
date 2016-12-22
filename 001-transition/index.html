@@ -3,9 +3,20 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      const buttonAdd = () => {
+        document.querySelector('#div1').classList.add('stepB');
+      }
+
+      const buttonRemove = () => {
+        document.querySelector('#div1').classList.remove('stepB');
+      }
+    </script>
     <title>css sandbox</title>
   </head>
   <body>
-    <div class="test"></div>
+    <div id="div1" class="stepA"></div>
+    <button type="button" onclick="buttonAdd()">add Class</button>
+    <button type="button" onclick="buttonRemove()">remove Class</button>
   </body>
 </html>
