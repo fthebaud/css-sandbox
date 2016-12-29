@@ -4,19 +4,58 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
-      const buttonAdd = () => {
-        document.querySelector('#div1').classList.add('stepB');
+      const buttonAddStep2B = () => {
+        document.querySelector('#div2').classList.add('div2-b');
       }
 
-      const buttonRemove = () => {
-        document.querySelector('#div1').classList.remove('stepB');
+      const buttonRemoveStep2B = () => {
+        document.querySelector('#div2').classList.remove('div2-b');
       }
+
+      function addStep3A() {
+        document.querySelector('#div3').classList.add('div3-a');
+      }
+      function removeStep3A() {
+        document.querySelector('#div3').classList.remove('div3-a');
+      }
+
+      function addStep3B() {
+        document.querySelector('#div3').classList.add('div3-b');
+      }
+      function removeStep3B() {
+        document.querySelector('#div3').classList.remove('div3-b');
+      }
+
+      function helloBatman() {
+        document.querySelector('.bat-logo').classList.add('bat-logo-visible');
+      }
+      function byeBatman() {
+        document.querySelector('.bat-logo').classList.remove('bat-logo-visible');
+      }
+
     </script>
     <title>css sandbox</title>
   </head>
   <body>
-    <div id="div1" class="stepA"></div>
-    <button type="button" onclick="buttonAdd()">add Class</button>
-    <button type="button" onclick="buttonRemove()">remove Class</button>
+    <div id="div1" class="div1">hover me</div>
+    <br/>
+    <div id="div2" class="div2-a"></div>
+    <button type="button" onclick="buttonAddStep2B()">add Class div2-b</button>
+    <button type="button" onclick="buttonRemoveStep2B()">remove Class div2-b</button>
+    <br/>
+    <br/>
+    <div id="div3" class="div3-a"></div>
+    <button type="button" onclick="addStep3A()">add Class div3-a</button>
+    <button type="button" onclick="removeStep3A()">remove Class div3-a</button>
+    <br/>
+    <br/>
+    <button type="button" onclick="addStep3B()">add Class div3-b</button>
+    <button type="button" onclick="removeStep3B()">remove Class div3-b</button>
+    <br/>
+    <br/>
+    <img src="img/batman-logo.png" alt="nanananana" class="bat-logo">
+    <br/>
+    <button type="button" onclick="helloBatman()">Call Batman !</button>
+    <button type="button" onclick="byeBatman()">Back to the Batcave !</button>
   </body>
 </html>
